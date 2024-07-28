@@ -7,7 +7,10 @@ function lessonsToSeconds() {
 
   let lessons = prompt ('How many lessons do you have left today?')
 
-  let result = lessons *60 *60
+const minutesInLesson = 60
+const secondsInMinute = 60
+
+  let result = lessons *minutesInLesson *secondsInMinute
 
   alert ("That's " + result + ' seconds 🤣🤣🤣 ')
 
